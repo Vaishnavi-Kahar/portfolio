@@ -1,0 +1,97 @@
+.mainProf {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  margin: 0 60px;
+  color: #fff;
+  font-family: Roboto;
+  line-height: normal;
+  font-style: normal;
+}
+.leftProf {
+  padding: 50px;
+}
+.rightProf {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading {
+  font-size: 72px;
+  font-weight: 800;
+  padding: 25px;
+}
+.para {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 25px;
+}
+.contactMe {
+  display: flex;
+  align-items: center;
+}
+
+.butt {
+  margin: 20px;
+  font-family: Outfit;
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 100px;
+  background: #576cbc;
+  width: 209px;
+  padding: 10px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+.image-container {
+  width: 400px; /* Adjust this as needed */
+  height: 400px; /* Adjust this as needed */
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+}
+
+.circular-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crop the image to cover the entire container */
+  border-radius: 50%;
+}
+
+/* Hover effect */
+.butt:hover {
+  background-color: #324f85;
+  text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Clicked effect */
+.butt:active {
+  background-color: #2d477b;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 909px) {
+  .mainProf {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  .leftProf,
+  .rightProf {
+    width: 100%;
+    padding: 15px;
+
+    text-align: center;
+    align-items: center;
+  }
+
+  .butt {
+    /* Center the button horizontally */
+    margin: 0 auto;
+    display: block;
+  }
+}

@@ -1,0 +1,54 @@
+.nav {
+  color: #fff;
+  font-family: Outfit;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+  margin: 0 60px;
+  align-items: center;
+  position: relative;
+}
+.leftNav {
+  font-size: 30px;
+  font-weight: 600;
+}
+.rightNav {
+  font-size: 25px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.rightContent {
+  padding: 0 20px;
+}
+.rightContent:hover,
+.leftNav:hover {
+  text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+}
+
+.rightNavIcon {
+  cursor: pointer;
+}
+.rightNavColumn {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60%;
+  transform: translateX(-85%);
+  padding: 10px;
+  z-index: 1000;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(25, 55, 109, 0.2) 0.1%,
+    #19376d 99.9%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.rightNavColumn.show {
+  display: flex;
+}
