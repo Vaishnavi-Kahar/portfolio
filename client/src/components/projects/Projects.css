@@ -1,0 +1,19 @@
+.projects-section {
+  margin: 5% auto;
+}
+.projectTitle {
+  color: #fff;
+  font-family: Outfit;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  margin: 0 2%;
+}
+@media (max-width: 768px) {
+  .projectTitle {
+    margin: 0 5%;
+  }
+}

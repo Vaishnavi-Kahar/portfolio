@@ -16,7 +16,8 @@ const Profile = () => {
       <div className="rightProf">
         <div className="image-container">
           <img
-            src="./images/profile.png"
+            loading="lazy"
+            src="./images/Mypic2.jpg"
             alt="Profile"
             className="circular-image"
           />

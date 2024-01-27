@@ -70,3 +70,27 @@
     rgba(255, 255, 255, 0) 66.02%
   );
 }
+
+@media (max-width: 909px) {
+  .mainA {
+    flex-direction: column;
+  }
+  .imageAbt {
+    width: 100%;
+  }
+  .aboutDiv {
+    flex-direction: column;
+  }
+  .leftAbout {
+    width: 100%;
+    height: auto;
+  }
+  .aboutContent {
+    width: 100%;
+    height: auto;
+
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding: 10px;
+  }
+}

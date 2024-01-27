@@ -8,7 +8,11 @@ const About = React.forwardRef((props, ref) => {
           <h1 className="aboutHeading">About</h1>
           <div className="aboutDiv">
             <div className="leftAbout">
-              <img src="images/about.png" alt="about.png" />
+              <img
+                className="imageAbt"
+                src="images/about.png"
+                alt="about.png"
+              />
             </div>
             <div className="rightAbout">
               <div className="aboutContent">

@@ -1,0 +1,100 @@
+.contact-section {
+  background-color: #19376d;
+  height: auto;
+  display: flex;
+  padding: 4% 3%;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: Outfit;
+  font-style: normal;
+  line-height: normal;
+
+  /* gap: 5rem; */
+}
+.leftFoot {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.contactHeading {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 2rem;
+}
+.contactPara {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+.rightFoot {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+.linkItem {
+  display: flex;
+  gap: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+.linkLogo {
+  color: #ffffff;
+  width: 1.7rem;
+  height: auto;
+}
+
+.links {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+  }
+  .leftFoot {
+    justify-content: center;
+    width: 100%;
+  }
+  .rightFoot {
+    width: 100%;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  .contactHeading {
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .contactPara {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  .linkItem {
+    gap: 1rem;
+    margin: 0.2rem 0;
+  }
+
+  .linkLogo {
+    width: 1rem;
+    height: auto;
+  }
+
+  .links {
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+  .linkFoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
