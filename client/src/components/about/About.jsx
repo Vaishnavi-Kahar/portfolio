@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.css";
-import { Grid, List, ListItem, ListItemText, Typography } from "@mui/material";
-import Skills from "../Skills/Skills";
+import { Grid } from "@mui/material";
 
 const imgURLs = [
   "./images/cpp.png",

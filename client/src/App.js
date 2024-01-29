@@ -6,7 +6,6 @@ import About from "./components/about/About";
 
 import Projects from "./components/projects/Projects";
 import Footer from "./components/footer/Footer"; // Assuming you have a Contact component
-import Skills from "./components/Skills/Skills";
 
 function App() {
   const aboutRef = useRef(null);
