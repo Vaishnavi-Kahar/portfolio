@@ -10,27 +10,27 @@
 
 .aboutMain {
   padding: 20px;
-  /* width: 1211px;
-  height: 639px; */
+  width: 83%;
+  height: auto;
   border-radius: 15px;
   background-color: rgba(12, 12, 12, 0.6);
 }
 
 .aboutDiv {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: column; */
 }
 
 .leftAbout {
   display: flex;
-  justify-content: center;
-  position: relative;
-  width: 562px;
-  height: 562px;
+  flex-direction: column;
+  padding: 30px;
+  margin: 30px 0;
+  width: 50%;
 }
 
 .aboutHeading {
-  position: absolute;
+  /* position: absolute; */
   padding-left: 30px;
   font-size: 35px;
   font-weight: 700;
@@ -42,25 +42,53 @@
   flex-direction: column;
   padding: 30px;
   margin: 30px 0;
+  width: 50%;
+}
+.skill-container {
+  display: flex;
+  justify-content: center;
+  margin: 6%;
+}
+
+.skill-circle {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  background-color: #19376d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-circle img {
+  max-width: 80px;
+  max-height: 80px;
 }
 
 .aboutContent {
-  width: 615px;
-  height: 128px;
+  /* width: 60%;
+  height: auto; */
   flex-shrink: 0;
   letter-spacing: 1.25px;
-  font-size: 25px;
-  padding: 10px 20px 20px;
+  font-size: 20px;
+  padding: 10px 30px 20px;
   align-items: center;
   margin-bottom: 20px;
 }
 
 .aHead {
   font-weight: 600;
+  margin: 0.5rem 0;
 }
 
 .aPara {
-  font-weight: 400;
+  font-weight: 200;
+}
+.aDate {
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+  font-weight: lighter;
+  color: aqua;
 }
 .aboutContent:hover {
   border-radius: 20px;
@@ -75,15 +103,30 @@
   .mainA {
     flex-direction: column;
   }
+  .aboutMain {
+    width: 95%;
+  }
   .imageAbt {
     width: 100%;
   }
   .aboutDiv {
     flex-direction: column;
   }
-  .leftAbout {
+
+  .aboutHeading {
+    padding-left: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.05px;
+  }
+  .leftAbout,
+  .rightAbout {
     width: 100%;
     height: auto;
+    margin: 10px 0;
+  }
+  .rightAbout {
+    padding: 0 auto;
   }
   .aboutContent {
     width: 100%;
@@ -91,6 +134,6 @@
 
     letter-spacing: 1px;
     font-size: 20px;
-    padding: 10px;
+    padding: 0px 10px;
   }
 }

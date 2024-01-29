@@ -1,39 +1,59 @@
 import React from "react";
 import "./About.css";
+import { Grid, List, ListItem, ListItemText, Typography } from "@mui/material";
+import Skills from "../Skills/Skills";
+
+const imgURLs = [
+  "./images/cpp.png",
+  "./images/python.png",
+  "./images/html.png",
+  "./images/css.png",
+  "./images/react.png",
+  "./images/node.png",
+  "./images/express.png",
+  "./images/mongodb.png",
+
+  // Add more image URLs as needed
+];
 const About = React.forwardRef((props, ref) => {
   return (
     <section ref={ref}>
       <div className="mainA">
         <div className="aboutMain">
-          <h1 className="aboutHeading">About</h1>
+          <h1 className="aboutHeading">Skills and Experience</h1>
           <div className="aboutDiv">
             <div className="leftAbout">
-              <img
-                className="imageAbt"
-                src="images/about.png"
-                alt="about.png"
-              />
+              {/* <h1>Skills</h1> */}
+              <Grid container spacing={1}>
+                {imgURLs.map((url, index) => (
+                  <Grid item key={index} xs={6} sm={4} md={4}>
+                    <div className="skill-container">
+                      <div className="skill-circle">
+                        <img src={url} alt={`Skill ${index}`} />
+                      </div>
+                    </div>
+                  </Grid>
+                ))}
+              </Grid>
             </div>
             <div className="rightAbout">
+              {/* <h1>Experience</h1> */}
               <div className="aboutContent">
-                <h3 className="aHead">Frontend developer</h3>
+                <h3 className="aHead">ARISTA Fellowship</h3>
+                <p className="aDate">Aug 2022 - April 2023</p>
+
                 <p className="aPara">
-                  I’m a front-end developer with experience in building
-                  responsive and optimized sites
-                </p>
-              </div>
-              <div className="aboutContent">
-                <h3 className="aHead">Backend developer</h3>
-                <p className="aPara">
-                  I have experience developing fast and optimised back-end
-                  systems and APIs
-                </p>
-              </div>
-              <div className="aboutContent">
-                <h3 className="aHead">UI designer</h3>
-                <p className="aPara">
-                  I have designed multiple landing pages and have created design
-                  systems as well
+                  <ul>
+                    <li>
+                      Developed a machine learning-driven slip prediction system
+                      for a robot with see-saw-like motion, ensuring object
+                      stability during user-controlled motion.
+                    </li>
+                    <li>
+                      Implemented a probabilistic event detector model with
+                      parameters α and β to enhance slip prediction accuracy.
+                    </li>
+                  </ul>
                 </p>
               </div>
             </div>

@@ -3,9 +3,10 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/profile/Profile";
 import About from "./components/about/About";
-import Experience from "./components/experience/Experience";
+
 import Projects from "./components/projects/Projects";
 import Footer from "./components/footer/Footer"; // Assuming you have a Contact component
+import Skills from "./components/Skills/Skills";
 
 function App() {
   const aboutRef = useRef(null);
@@ -23,7 +24,8 @@ function App() {
       />
       <Profile />
       <About ref={aboutRef} />
-      <Experience ref={experienceRef} />
+      {/* <Skills /> */}
+
       <Projects ref={projectsRef} />
       <Footer ref={contactRef} />
     </div>

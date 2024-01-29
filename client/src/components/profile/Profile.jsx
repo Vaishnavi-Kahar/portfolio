@@ -1,6 +1,14 @@
 import React from "react";
 import "./Profile.css";
 const Profile = () => {
+  const redirectToResume = () => {
+    // Open your resume link in a new tab
+    window.open(
+      "https://drive.google.com/file/d/1CaapcEpisk6423yxIltjKk7t087ltjEZ/view?usp=drive_link",
+      "_blank"
+    );
+  };
+
   return (
     <div className="mainProf">
       <div className="leftProf">
@@ -10,7 +18,9 @@ const Profile = () => {
           NodeJS. Reach out if you’d like to learn more!
         </p>
         <div className="contactMe">
-          <div className="butt">Contact Me</div>
+          <div className="butt" onClick={redirectToResume}>
+            My Resume
+          </div>
         </div>
       </div>
       <div className="rightProf">

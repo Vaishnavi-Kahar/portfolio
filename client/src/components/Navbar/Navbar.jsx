@@ -45,14 +45,9 @@ const Navbar = ({ aboutRef, experienceRef, projectsRef, contactRef }) => {
               className="rightContent"
               onClick={() => handleNavigation(aboutRef)}
             >
-              About
-            </div>
-            <div
-              className="rightContent"
-              onClick={() => handleNavigation(experienceRef)}
-            >
               Experience
             </div>
+
             <div
               className="rightContent"
               onClick={() => handleNavigation(projectsRef)}

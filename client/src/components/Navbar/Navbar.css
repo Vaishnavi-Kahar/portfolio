@@ -40,7 +40,7 @@
   top: 60%;
   transform: translateX(-85%);
   padding: 10px;
-  z-index: 1000;
+  z-index: 1;
   border-radius: 10px;
   background: linear-gradient(
     180deg,
@@ -51,4 +51,13 @@
 }
 .rightNavColumn.show {
   display: flex;
+}
+
+@media (max-width: 765px) {
+  .nav {
+    margin: 0;
+  }
+  .rightNavColumn {
+    background: linear-gradient(180deg, #576cbc -14.75%, #132a53 50.1%);
+  }
 }

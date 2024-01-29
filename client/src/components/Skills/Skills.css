@@ -1,0 +1,26 @@
+/* 
+.slider-image {
+  width: 100%;
+  height: auto;
+}
+
+
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  color: black; 
+  z-index: 1;
+}
+
+.slick-prev {
+  left: 10px; 
+}
+
+.slick-next {
+  right: 10px; 
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #333; 
+} */
